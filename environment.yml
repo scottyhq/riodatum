@@ -6,8 +6,10 @@ dependencies:
   - pip=22
   - gdal=3.4.1
   - proj=8.2.1
-  - rioxarray
+  # visualization:
+  - datashader
   - hvplot
+  - rioxarray
   - pip:
     - rasterio==1.3a3
 
