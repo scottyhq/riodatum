@@ -4,8 +4,8 @@ see also: https://github.com/conda-forge/rasterio-feedstock/issues/239
 
 ### CONDA-FORGE rasterio
 WARNING: does not necessarily match dependency versions of rasterio pypi wheels!!
-$ conda create -n rasterio rasterio
-
+`$conda create -n rasterio rasterio`
+```
 proj                      9.0.0                h93bde94_1    conda-forge
 pyproj                    3.3.0            py39hcadae2f_2    conda-forge
 gdal                      3.4.2            py39hc691d54_0    conda-forge
@@ -13,23 +13,27 @@ libgdal                   3.4.2                haa48f22_0    conda-forge
 geotiff                   1.7.1                h509b78c_0    conda-forge
 rasterio                  1.2.10           py39h2e4b6e6_5    conda-forge
 geos                      3.10.2               h9c3ff4c_0    conda-forge
-
+```
 
 ### PIP rasterio
+```
 $conda create -n riopip python=3.9 ipykernel
 $conda activate riopip
 $pip install --pre rasterio 
 $python -m ipykernel install --name riopip --user
-
+```
+```
 (riopip) jovyan@jupyter-scottyhq: venv$ rio --version
 1.3a3
 (riopip) jovyan@jupyter-scottyhq: venv$ rio --gdal-version
 3.4.1
+```
 
 Until https://github.com/rasterio/rasterio/issues/2349 
 I think we go here to find other versions that the wheel used
 https://github.com/rasterio/rasterio-wheels/blob/master/env_vars.sh
 
+```
 LIBPNG_VERSION=1.6.35
 ZLIB_VERSION=1.2.11
 LIBDEFLATE_VERSION=1.7
@@ -57,20 +61,21 @@ export PACKAGE_DATA=1
 export PROJ_LIB=/usr/local/share/proj
 export AUDITWHEEL_EXTRA_LIB_NAME_TAG=rasterio
 export SETUPTOOLS_USE_DISTUTILS=stdlib
-
+```
 
 ### matching GDAL install
 NOTE: per-gdal instructions, we create a matching venv with GDAL command line tools:
-
+```
 $conda config --set channel_priority strict
 $conda create -n gdal341 -c conda-forge python=3.9 ipykernel gdal=3.4.1 proj=8.2.1
-
 $conda list | grep 'proj\|rasterio\|gdal\|tiff\|geos'
+```
 
-And the environment has: 
+```
 gdal                      3.4.1            py39h85832e7_5    conda-forge
 geos                      3.10.2               h9c3ff4c_0    conda-forge
 geotiff                   1.7.0                h6593c0a_6    conda-forge
 libgdal                   3.4.1                hff5c5e8_5    conda-forge
 libtiff                   4.3.0                h542a066_3    conda-forge
 proj                      8.2.1                h277dcde_0    conda-forge
+```
