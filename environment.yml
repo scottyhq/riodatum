@@ -4,12 +4,11 @@ channels:
 dependencies:
   - python=3.9
   - pip=22
-  - gdal=3.4.1
+  - gdal=3.4.2
   - proj=8.2.1
   # visualization:
   - datashader
   - hvplot
   - rioxarray
   - pip:
-    - rasterio==1.3a3
-
+    - rasterio==1.3a4
