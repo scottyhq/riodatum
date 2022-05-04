@@ -5,7 +5,6 @@ dependencies:
   - python=3.9
   - pip=22
   - gdal=3.4.2
-  - proj=8.2.1
   # visualization:
   - datashader
   - hvplot
