@@ -10,4 +10,4 @@ dependencies:
   - hvplot
   - rioxarray
   - pip:
-    - rasterio==1.3a4
+    - rasterio==1.3b1
