@@ -8,6 +8,6 @@ dependencies:
   # visualization:
   - datashader
   - hvplot
-  - rioxarray
+#  - rioxarray
   - pip:
     - rasterio==1.3b1
