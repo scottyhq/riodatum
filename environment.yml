@@ -9,3 +9,4 @@ dependencies:
   - datashader
   - hvplot
   - rasterio=1.3
+  - rioxarray
