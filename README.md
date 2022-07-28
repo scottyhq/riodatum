@@ -1,5 +1,5 @@
 ## Are reprojection issues due to dependency library version mismatches?
-[![Binder](https://mybinder.org/badge_logo.svg)](https://gke.mybinder.org/v2/gh/scottyhq/riodatum/HEAD?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://gke.mybinder.org/v2/gh/scottyhq/riodatum/1.3?urlpath=lab)
 
 https://github.com/rasterio/rasterio/issues/2433
 see also: https://github.com/conda-forge/rasterio-feedstock/issues/239
