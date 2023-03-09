@@ -2,8 +2,8 @@ name: riovdatum
 channels:
   - conda-forge
 dependencies:
-  - python=3.10
-  - rasterio=1.3.5
+  - python
+  - rasterio=1.3.6
   # visualization:
   - datashader
   - hvplot
